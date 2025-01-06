@@ -11,7 +11,7 @@ class Model:
         self.init_model()
 
     def init_model(self):
-        self.df = pd.read_csv("../datasets/weather-extended.csv")
+        self.df = pd.read_csv("./weather-extended.csv")
 
         Q1 = self.df.quantile(0.25, numeric_only=True)
         Q3 = self.df.quantile(0.75, numeric_only=True)
