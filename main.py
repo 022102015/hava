@@ -28,7 +28,7 @@ st.caption("Bu uygulama, Yapay zeka kullanarak hava durumu tahminleri yapar.")
 
 st.subheader("Veri Seti")
 
-df = pd.read_csv("../datasets/weather-extended.csv")
+df = pd.read_csv("./weather-extended.csv")
 st.dataframe(df, use_container_width=True)
 
 st.line_chart(df.drop(["weather", "city"], axis=1))
